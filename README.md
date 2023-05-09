@@ -18,13 +18,17 @@
 Before running the app, make sure you have required packages installed and do follwing:
 
 ### - Setup json server using
- > json-server --watch db.json
- 
+```
+	json-server --watch db.json
+```
+
  This hosts a server in localhost probably with port 3000 by default. The file db.json contains json data so run the command in the directory where db.json exists. <br>
  If there is no db.json file, an empty db.json file will be initialized.
  
 ### - Setup ADB Reverse socket using
- > adb reverse tcp:3000 tcp:3000
+```
+	adb reverse tcp:3000 tcp:3000
+```
  
  This setups a reverse port forwarding of traffic from port 3000. Remember, enter the port that the json server is used on!
  It is important step for the app to connect to local server hosted in machine. 
