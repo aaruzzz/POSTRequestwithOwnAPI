@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/createanaccounttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/create_an_account"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userprofileimg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginVertical="10dp"
+            android:contentDescription="@string/user_profile_picture"
+            android:src="@drawable/signuppageuserimg"
+            app:layout_constraintEnd_toEndOf="@id/uploadbtn"
+            app:layout_constraintStart_toStartOf="@id/uploadbtn"
+            app:layout_constraintTop_toBottomOf="@id/createanaccounttxt" />
+
+        <Button
+            android:id="@+id/uploadbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/gradient"
+            android:text="@string/upload"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userprofileimg" />
+
+        <EditText
+            android:id="@+id/enteremail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="16dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/textborderblack"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:text="gkfh@fdjmgdf.dfgoij"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uploadbtn"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/emailexistmsg"
+            android:layout_width="375dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Please enter valid email!"
+            android:textColor="#ff0000"
+            android:textSize="13sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/enteremail"
+            app:layout_constraintTop_toBottomOf="@id/enteremail" />
+
+
+        <EditText
+            android:id="@+id/enterfullname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/textborderblack"
+            android:hint="@string/full_name"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="@id/enteremail"
+            app:layout_constraintStart_toStartOf="@id/enteremail"
+            app:layout_constraintTop_toBottomOf="@id/emailexistmsg"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+            android:id="@+id/nameexistmsg"
+            android:layout_width="375dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Please enter valid name!"
+            android:textColor="#ff0000"
+            android:textSize="13sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/enterfullname"
+            app:layout_constraintTop_toBottomOf="@id/enterfullname" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordfield"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            app:layout_constraintEnd_toEndOf="@id/enterfullname"
+            app:layout_constraintStart_toStartOf="@id/enterfullname"
+            app:layout_constraintTop_toBottomOf="@id/nameexistmsg"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/enterpassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints="password"
+                android:background="@drawable/textborderblack"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColor="@color/grey"
+                android:textSize="20sp"
+                app:backgroundTint="@null"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/passworderrormsg"-->
+        <!--        android:layout_width="375dp"-->
+        <!--        android:layout_height="20dp"-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:text="Password must include an uppercase letter."-->
+        <!--        android:textColor="#ff0000"-->
+        <!--        android:textSize="13sp"-->
+        <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--        app:layout_constraintRight_toRightOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/passwordfield" />-->
+
+
+        <TextView
+            android:id="@+id/termstxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:text="@string/aggreeterms"
+            android:textColor="@color/black"
+            android:textColorLink="@color/darkblue"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/passwordfield"
+            app:layout_constraintStart_toStartOf="@id/passwordfield"
+            app:layout_constraintTop_toBottomOf="@id/passwordfield" />
+
+        <Button
+            android:id="@+id/createaccountbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:background="@drawable/gradient"
+            android:imeOptions="actionDone"
+            android:text="@string/create_account"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="@id/termstxt"
+            app:layout_constraintStart_toStartOf="@id/termstxt"
+            app:layout_constraintTop_toBottomOf="@id/termstxt" />
+
+
+        <TextView
+            android:id="@+id/registereduserstxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/registered_users"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/createaccountbtn"
+            app:layout_constraintStart_toStartOf="@id/createaccountbtn"
+            app:layout_constraintTop_toBottomOf="@id/createaccountbtn" />
+
+        <Button
+            android:id="@+id/refreshbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/gradient"
+            android:text="@string/refresh"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="@id/registereduserstxt"
+            app:layout_constraintStart_toStartOf="@id/registereduserstxt"
+            app:layout_constraintTop_toBottomOf="@id/registereduserstxt" />
+
+        <TextView
+            android:id="@+id/result_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/refreshbtn"
+            app:layout_constraintTop_toBottomOf="@id/refreshbtn" />
+
+        <TextView
+            android:id="@+id/profile_pic_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/result_list" />
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:contentDescription="@string/profile_picture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_pic_text" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

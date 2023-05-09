@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/eight_letter_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/more_than_8_letters"
+        android:textSize="20sp"
+        android:layout_margin="4dp"
+        />
+
+    <TextView
+        android:id="@+id/capital_letter_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/atleast_one_capital_letter"
+        android:textSize="20sp"
+        android:layout_margin="4dp"
+        />
+
+    <TextView
+        android:id="@+id/small_letter_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/atleast_one_small_letter"
+        android:textSize="20sp"
+        android:layout_margin="4dp"
+        />
+
+    <TextView
+        android:id="@+id/one_number_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/atleast_one_number"
+        android:textSize="20sp"
+        android:layout_margin="4dp"
+        />
+
+    <TextView
+        android:id="@+id/special_character_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/atleast_one_special_character"
+        android:textSize="20sp"
+        android:layout_margin="4dp"
+        />
+
+
+</LinearLayout>

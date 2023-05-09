@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">POSTRequestwithOwnAPI</string>
+    <string name="aggreeterms">By continuing, I agree to the SGC <b><a href="https://www.test.com/">Terms and Conditions, Privacy Statement</a></b> and <b><a href="https://www.test.com/">SGC Rewards Terms and Conditions.</a></b></string>
+    <string name="create_an_account">Create an account</string>
+    <string name="user_profile_picture">User Profile Picture</string>
+    <string name="upload">Upload</string>
+    <string name="email_address">Email Address</string>
+    <string name="full_name">Full name</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create account</string>
+    <string name="registered_users">Registered Users:</string>
+    <string name="refresh">Refresh</string>
+    <string name="profilepic">Profile Pic:</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="more_than_8_letters">More than 8 letters</string>
+    <string name="atleast_one_capital_letter">Atleast one Capital Letter</string>
+    <string name="atleast_one_small_letter">Atleast one Small Letter</string>
+    <string name="atleast_one_number">Atleast one number</string>
+    <string name="atleast_one_special_character">Atleast one special character</string>
+    <string name="email_missing">Email missing!</string>
+    <string name="enter_valid_email">Enter valid email!</string>
+    <string name="name_missing">Name missing!</string>
+    <string name="please_enter_proper_name">Please enter proper name!</string>
+    <string name="input_is_too_long">Input is too long, please enter proper name!!</string>
+</resources>
